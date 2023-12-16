@@ -24,7 +24,7 @@ function App() {
       <PlaylistProvider>
         <NavBar />
         <Routes>
-          {/* TODO : Configurer les routes et leurs components à afficher */}
+          {/*Il faut encore configurer les routes et leurs components à afficher */}
           {routes.map((route, index) => (
             <Route key={index} path={route.path} element={route.element} />
           ))}
