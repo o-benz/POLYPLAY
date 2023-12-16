@@ -40,7 +40,6 @@ export default function CreatePlaylist() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     if (!data.name || !data.description) return;
-    // TODO : envoyer la bonne requête pour ajouter ou modifier une playlist en fonction de l'attribut params.id
     if (params.id){
       data.id = params.id;
       await api.updatePlaylist(data);
