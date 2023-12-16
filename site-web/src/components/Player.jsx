@@ -15,23 +15,11 @@ export default function Player() {
   const playSong = () => {
     dispatch({ type: ACTIONS.PLAY, payload: { index: -1 } });
   };
-
-  // TODO : ajouter une action de jouer la prochaine chanson
   const playNextSong = () => { dispatch({ type: ACTIONS.NEXT }); };
-
-  // TODO : ajouter une action de jouer la chanson précédante
   const playPreviousSong = () => { dispatch({ type: ACTIONS.PREVIOUS }); };
-
-  // TODO : ajouter une action de déplacement dans la barre de progrès
   const seek = (newTime) => { dispatch({ type: ACTIONS.SEEK, payload:{time: newTime}}); };
-
-  // TODO : ajouter une action d'avancement/recul dans la chanson
   const scrubTime = (delta) => {dispatch({type: ACTIONS.SCRUB, payload: {delta: delta}}); };
-
-  // TODO : ajouter une action de fermer/ouvrir le son
   const muteToggle = () => {dispatch({type: ACTIONS.MUTE}); };
-
-  // TODO : ajouter une action d'activer ou désactiver le mode "shuffle"
   const shuffleToggle = () => {dispatch({type: ACTIONS.SHUFFLE}); };
 
   const shortcutHandler = (event) => {
@@ -75,7 +63,6 @@ export default function Player() {
       <div id="now-playing">On joue : {state.currentSong}</div>
       <div id="controls" className="flex-column">
         <section id="buttons-container" className="flex-row">
-          {/*TODO : géré l'événement 'click' */}
           <button
             className="control-btn fa fa-2x fa-arrow-left"
             id="previous"
@@ -86,19 +73,16 @@ export default function Player() {
             id="play"
             onClick={() => { playSong() }}
           ></button>
-          {/*TODO : géré l'événement 'click' */}
           <button
             className="control-btn fa fa-2x fa-arrow-right"
             id="next"
             onClick={() => {playNextSong()}}
           ></button>
-          {/*TODO : géré l'événement 'click' */}
           <button
             className={`${state.shuffle ? "control-btn-toggled" : ""} control-btn fa fa-2x fa-shuffle`}
             id="shuffle"
             onClick={() => {shuffleToggle()}}
           ></button>
-          {/*TODO : géré l'événement 'click' */}
           <button
             className={`control-btn fa fa-2x ${state.mute ? "fa-volume-mute" : "fa-volume-high"}`}
             id="mute"
@@ -106,9 +90,7 @@ export default function Player() {
           ></button>
         </section>
         <section id="timeline-container" className="flex-row">
-          {/*TODO : afficher le temps en cours de la chanson */}
           <span id="timeline-current">{state.audio.currentTime ? formatTime(state.audio.currentTime): "0:00"}</span>
-          {/*TODO : afficher le progrès de la chanson */}
           <input
             id="timeline"
             type="range"
