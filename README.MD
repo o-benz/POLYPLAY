@@ -1,6 +1,6 @@
 # POLYPLAY - Full-Stack Music Playlist Management System
 
-![PolyPlay](/doc/polyplay-logo.png)
+![PolyPlay](/doc/index.png)
 
 **POLYPLAY** is a dynamic and immersive full-stack web application designed to revolutionize your music experience. With a seamless blend of cutting-edge technologies, it empowers users to curate and enjoy personalized playlists effortlessly. The system is built using HTML/CSS, JavaScript (React, Node.js), and MongoDB.
 
