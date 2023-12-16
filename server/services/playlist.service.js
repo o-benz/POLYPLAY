@@ -17,7 +17,6 @@ class PlaylistService {
   }
 
   /**
-   * TODO : Implémenter la récupération de toutes les playlists
    * Retourne toutes les playlists disponibles
    * @returns {Promise<Array>} la liste de toutes les playlists
    */
@@ -26,7 +25,6 @@ class PlaylistService {
   }
 
   /**
-   * TODO : Implémenter la récupération d'une playlist en fonction de son id
    * Retourne une playlist en fonction de son id
    * @param {string} id
    * @returns Retourne la playlist en fonction de son id
@@ -36,7 +34,6 @@ class PlaylistService {
   }
 
   /**
-   * TODO : Implémenter l'ajout d'une nouvelle playlist
    * Ajoute une playlist dans le fichier de toutes les playlists
    * @param {Object} playlist nouvelle playlist à ajouter
    * @returns retourne la playlist ajoutée
@@ -49,7 +46,6 @@ class PlaylistService {
   }
 
   /**
-   * TODO : Implémenter la mise à jour d'une playlit existante
    * Modifie une playlist en fonction de son id et met à jour le fichier de toutes les playlists
    * @param {Object} playlist nouveau contenu de la playlist
    */
@@ -114,9 +110,6 @@ class PlaylistService {
   }
 
   /**
-   * TODO : Implémenter la recherche pour les 2 champs des playlists (name et description).
-   * Astuce : utilisez l'opérateur '$or' de MongoDB
-   *
    * Cherche et retourne les playlists qui ont un mot clé spécifique dans leur description (name, description)
    * Si le paramètre 'exact' est TRUE, la recherche est sensible à la case
    * en utilisant l'option "i" dans la recherche par expression régulière
