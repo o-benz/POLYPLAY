@@ -6,7 +6,7 @@ export default function About() {
       <section className="flex-column align-center">
         <h1>PolyPlay</h1>
         <p>
-          Ce projet est un simple gestionnaire de listes de chansons (Playlists)
+          Ce projet est un gestionnaire de listes de chansons (Playlists)
         </p>
         <p>
           Vous pouvez générer des playlists composés des chansons disponibles
