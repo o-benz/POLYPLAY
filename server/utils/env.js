@@ -1,4 +1,4 @@
-const DB_DB = "TP5";
+const DB_DB = "POLYPLAY";
 const DB_COLLECTION_SONGS = "songs";
 const DB_COLLECTION_PLAYLISTS = "playlists";
 
