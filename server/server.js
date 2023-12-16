@@ -30,7 +30,6 @@ app.use("/api/search", searchBarRouter.router);
 
 const server = app.listen(PORT, () => {
   dbService.connectToServer(DB_CONSTS.DB_URL).then(async() => {
-    // TODO : populer la BD avec les valeurs par défaut
     await dbService.populateDb('songs', require("./data/songs.json").songs);
     await dbService.populateDb("playlists", require("./data/playlists.json").playlists);
     // eslint-disable-next-line no-console
